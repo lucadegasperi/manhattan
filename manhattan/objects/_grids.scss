@@ -1,0 +1,16 @@
+// grid wrapper
+.gw, %gw {
+	list-style: none;
+    margin-bottom: 0;
+	@extend .cf;
+}
+
+// shorthand and semantic
+.g, %g { float: left; }
+
+// reverse grid
+.gw--rev > .g, %gw--rev > %g { float: right; }
+
+// clear last element's border
+.g > :last-child, %g > :last-child,
+.gw > :last-child,  %gw > :last-child { margin-bottom: 0; }

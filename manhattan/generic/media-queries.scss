@@ -1,0 +1,40 @@
+// include the default ones
+
+@include font-sizes-setup();
+@include spacing-setup($sus);
+@include widths-setup();
+
+// add responsivity
+@if $responsive == true {
+
+@include media-query(xs){
+    @include font-sizes-setup("xs-");
+    @include spacing-setup($sus, "xs-");
+    @include widths-setup("xs-");
+}
+
+@include media-query(s){
+    @include font-sizes-setup("s-");
+    @include spacing-setup($sus, "s-");
+    @include widths-setup("s-");
+}
+
+@include media-query(m){
+    @include font-sizes-setup("m-");
+    @include spacing-setup($sus, "m-");
+    @include widths-setup("m-");
+}
+
+@include media-query(l){
+    @include font-sizes-setup("l-");
+    @include spacing-setup($sus, "l-");
+    @include widths-setup("l-");
+}
+
+@include media-query(xl){
+    @include font-sizes-setup("xl-");
+    @include spacing-setup($sus, "xl-");
+    @include widths-setup("xl-");
+}
+
+} 

@@ -1,0 +1,50 @@
+
+@mixin spacing-setup($spacing-units, $namespace: "") {
+
+// full padding
+$i: 1;
+@each $su in $spacing-units {
+	@include class(#{$namespace}p-#{$i}){
+		padding: $su;
+		padding: ( $su / $base-font-size ) * 1rem;
+	}
+	$i: $i + 1;
+}
+
+@include class(#{$namespace}ph-0) {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+// generate horizontal only paddings
+
+$i: 1;
+@each $su in $spacing-units {
+	@include class(#{$namespace}ph-#{$i}) {
+		padding-left: $su;
+		padding-left: ( $su / $base-font-size ) * 1rem;
+		padding-right: $su;
+		padding-right: ( $su / $base-font-size ) * 1rem;
+	}
+	$i: $i + 1;
+}
+
+// generate vertical only paddings
+
+@include class(#{$namespace}pv-0) {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+$i: 1;
+@each $su in $spacing-units {
+	@include class(#{$namespace}pv-#{$i}) {
+		padding-top: $su;
+		padding-top: ( $su / $base-font-size ) * 1rem;
+		padding-bottom: $su;
+		padding-bottom: ( $su / $base-font-size ) * 1rem;
+	}
+	$i: $i + 1;
+}
+
+}

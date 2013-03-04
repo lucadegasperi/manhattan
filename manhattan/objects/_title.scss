@@ -1,0 +1,12 @@
+.title, %title {
+	
+	h1, h2, h3, h4, h5, h6, .title__heading {
+		margin-bottom: 0;
+	}
+}
+
+.title__label, %title__label {
+	text-transform: uppercase;
+	font-size: $micro-size;
+	font-weight: bold;
+}

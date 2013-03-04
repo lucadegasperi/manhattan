@@ -1,0 +1,10 @@
+p {
+	@include font-size($milli-size);
+}
+
+@include media-query("s") {
+	p {
+		@include font-size($base-size);
+	}
+}
+
