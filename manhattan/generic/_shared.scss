@@ -16,7 +16,7 @@ table,
 fieldset,figure,
 pre, %sass-margin-bottom {
     margin-bottom: $base-spacing-unit;
-    margin-bottom: ($base-spacing-unit / $base-font-size) * 1em;
+    margin-bottom: ($base-spacing-unit / $base-font-size) * 1rem;
 }
 
 /*h1,h2,h3,h4,h5,h6 {
@@ -30,7 +30,7 @@ pre, %sass-margin-bottom {
  */
 hr {
     margin-bottom: $base-spacing-unit - 2px;
-    margin-bottom: (($base-spacing-unit - 2px) / $base-font-size) * 1em;
+    margin-bottom: (($base-spacing-unit - 2px) / $base-font-size) * 1rem;
 }
 
 
@@ -40,5 +40,5 @@ hr {
  */
 ul,ol,dd {
     margin-left: 2 * $base-spacing-unit;
-    margin-left: (2 * $base-spacing-unit / $base-font-size) * 1em;
+    margin-left: (2 * $base-spacing-unit / $base-font-size) * 1rem;
 }

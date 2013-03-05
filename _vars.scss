@@ -9,6 +9,7 @@ $line-height-ratio: 		$base-line-height / $base-font-size;
 // spacing units
 $base-spacing-unit: 		$base-line-height;
 $half-spacing-unit: 		$base-spacing-unit / 2;
+$two-thirds-spacing-unit: 	$base-spacing-unit / 4 * 3;
 $quarter-spacing-unit: 		$base-spacing-unit / 4;
 $double-spacing-unit:  		$base-spacing-unit * 2;
 $triple-spacing-unit:  		$base-spacing-unit * 3;
@@ -48,6 +49,6 @@ $debug: 					false!default;
 $development: 				true;
 
 // here define all the lists
-$sus: $quarter-spacing-unit, $half-spacing-unit,
+$sus: $quarter-spacing-unit, $half-spacing-unit, $two-thirds-spacing-unit,
 		$base-spacing-unit, $double-spacing-unit,
 		$triple-spacing-unit, $quadruple-spacing-unit;
