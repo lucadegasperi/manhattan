@@ -3,12 +3,5 @@
 \*------------------------------------*/
 
 p {
-	@include font-size($milli-size);
+	@include font-size($base-size);
 }
-
-@include media-query("s") {
-	p {
-		@include font-size($base-size);
-	}
-}
-
