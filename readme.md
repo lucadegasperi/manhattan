@@ -1,5 +1,5 @@
 ##What's this?
-Manhattan is a highly opinionated SASS library for easing the pain of big CSS development. It has two primary purposes: Prototyping page elements by using classes to abstract the element's behaviour at different resolutions. After prototyping, generate clean and lightweight CSS by using SASS hidden classes.
+Manhattan is a highly opinionated SASS library for easing the pain of big CSS development. It has two primary purposes: Prototyping page elements by using classes to abstract the element's behaviour at different resolutions. After prototyping, generate clean and lightweight CSS by using SASS silent classes.
 
 Use Manhattan if:
 - You need css prototyping and abstractions.
