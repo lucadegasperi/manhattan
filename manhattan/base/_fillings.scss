@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    $FILLINGS
+\*------------------------------------*/
+
 @mixin fillings-setup($colors, $namespace: "") {
 
 	@each $color in $colors {

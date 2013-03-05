@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+
 h1 {
 	@include font-size($h1-size, 1.222em);
 	margin-bottom: $base-spacing-unit;

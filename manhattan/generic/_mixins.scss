@@ -1,15 +1,14 @@
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
+
 /**
  * Create a fully formed type style (sizing and vertical rhythm) by passing in a
  * single value, e.g.:
  *
    `@include font-size(10px);`
- *
- * Thanks to @redclov3r for the `line-height` Sass:
- * twitter.com/redclov3r/status/250301539321798657
  */
+
 @mixin font-size($font-size, $line-height: 1.5em) {
     font-size: $font-size;
     font-size: ($font-size / $base-font-size) * 1rem;

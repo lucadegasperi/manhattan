@@ -1,16 +1,9 @@
 /*------------------------------------*\
     $WIDTHS
 \*------------------------------------*/
-/**
- * Sizes in human readable format. These are used in conjunction with other
- * objects and abstractions found in inuit.css, most commonly the grid system
- * and faux flexbox.
- *
- * We have a mixin to generate our widths and their breakpoint-specific
- * variations.
- */
 
 @mixin widths-setup($namespace: "") {
+    
     /**
     * Whole
     */
@@ -101,7 +94,7 @@
     .#{$namespace}eleven-twelfths   { width:91.666%; }
 
     .#{$namespace}one-whole         { width:100%; }
-    
+
     }
 
     /**
