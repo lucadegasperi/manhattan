@@ -29,6 +29,7 @@ Everything is easily extensible and customizable.
 
 
 ##Credits
+A lot of the code in Manhattan and its philosophy is inspired by [Harry Roberts](http://csswizardry.com "Harry Robert's Website") work on [inuit.css](https://github.com/csswizardry/inuit.css/ "inuit.css"). Thanks for your precious hard work!
 
 ##MIT Licence
 Copyright (C) 2013 Luca Degasperi
