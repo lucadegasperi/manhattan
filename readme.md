@@ -44,11 +44,11 @@ Once you finished prototyping your element it's time to make it real.
 ```
 ```sass
 .header {
-	%g;
-	%one-whole;
-	%pad-2;
-	%m-one-half;
-	%m-pad-3;
+	@extend %g;
+	@extend %one-whole;
+	@extend %pad-2;
+	@extend %m-one-half;
+	@extend %m-pad-3;
 }
 ```
 Simple and beautiful. You don't even have to worry about media queries, just tell how your element should behave and Manhattan will do the rest.
