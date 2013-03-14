@@ -37,10 +37,7 @@ $micro-size:        		12px!default;
 $responsive: 				true!default;
 
 // responsive breakpoints
-$s-start:         		481px!default;
-$m-start:         		760px!default;
-$l-start:        		1024px!default;
-$xl-start: 				1200px!default;
+$breakpoints: ("s" 481px) ("m" 760px) ("l" 1024px) ("xl" 1200px);
 
 // debug options
 $debug: 					false!default;
