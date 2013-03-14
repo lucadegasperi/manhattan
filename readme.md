@@ -47,14 +47,13 @@ Once you finished prototyping your element it's time to make it real.
 	%one-whole;
 	%pad-2;
 	%m-one-half;
-	%m-pad-3:
+	%m-pad-3;
 }
 ```
-Simple and beautiful, you don't even have to worry about media queries, just tell how your element should behave and Manhattan will do the rest.
-
+Simple and beautiful. You don't even have to worry about media queries, just tell how your element should behave and Manhattan will do the rest.
 
 ##The developer
-
+Luca is a Digital Creative crafting with code and pixels beautiful experiences for people to enjoy. He writes HTML, CSS since he was 14 and PHP, JS since 17. Luca lives in the middle of the Alps, he often tweets at [@lucadegasperi](http://twitter.com/lucadegasperi "Luca Degasperi on Twitter") and shares some shots on [Dribbble](http://dribbble.com/lucadegasperi "Luca Degasperi on Dribbble").
 
 ##Credits
 A lot of the code in Manhattan and its philosophy is inspired by [Harry Roberts](http://csswizardry.com "Harry Robert's Website") work on [inuit.css](https://github.com/csswizardry/inuit.css/ "inuit.css"). Thanks for your precious hard work!
