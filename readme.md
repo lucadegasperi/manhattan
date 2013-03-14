@@ -5,6 +5,7 @@ Use Manhattan if:
 - You need css prototyping and abstractions.
 - You understand/need scalability and reusable code.
 - You are a confident/competent developer SASS.
+
 Do not use Manhattan if:
 - You need a framework that supplies design (Use Bootstrap for that).
 
