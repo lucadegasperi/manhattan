@@ -7,38 +7,21 @@
 @include font-sizes-setup();
 @include spacing-setup($sus);
 @include widths-setup();
+@include colors-setup($colors);
 
 // add responsivity
 @if $responsive == true {
 
-@include media-query(xs){
-    @include font-sizes-setup("xs-");
-    @include spacing-setup($sus, "xs-");
-    @include widths-setup("xs-");
-}
+    @each $breakpoint in $breakpoints {
+        $name: nth($breakpoint, 1);
+        $pixels: nth($breakpoint, 2);
+      
+        @include media-query($pixels){
+            @include font-sizes-setup("#{$name}-");
+            @include spacing-setup($sus, "#{$name}-");
+            @include widths-setup("#{$name}-");
+            @include colors-setup($colors, "#{$name}-");
+        }
+    }
 
-@include media-query(s){
-    @include font-sizes-setup("s-");
-    @include spacing-setup($sus, "s-");
-    @include widths-setup("s-");
 }
-
-@include media-query(m){
-    @include font-sizes-setup("m-");
-    @include spacing-setup($sus, "m-");
-    @include widths-setup("m-");
-}
-
-@include media-query(l){
-    @include font-sizes-setup("l-");
-    @include spacing-setup($sus, "l-");
-    @include widths-setup("l-");
-}
-
-@include media-query(xl){
-    @include font-sizes-setup("xl-");
-    @include spacing-setup($sus, "xl-");
-    @include widths-setup("xl-");
-}
-
-} 

@@ -1,54 +1,60 @@
 @charset "UTF-8";
 
-// base font size and line height
-$base-font-size: 			16px!default;
-$base-line-height: 			24px!default;
+// development makes the classes noisy
+$development:               true;
 
-$line-height-ratio: 		$base-line-height / $base-font-size;
+// base font size and line height
+$base-font-size:            16px!default;
+$base-line-height:          24px!default;
+
+$line-height-ratio:         $base-line-height / $base-font-size;
 
 // spacing units
-$base-spacing-unit: 		$base-line-height;
-$half-spacing-unit: 		$base-spacing-unit / 2;
-$two-thirds-spacing-unit: 	$base-spacing-unit / 4 * 3;
-$quarter-spacing-unit: 		$base-spacing-unit / 4;
-$double-spacing-unit:  		$base-spacing-unit * 2;
-$triple-spacing-unit:  		$base-spacing-unit * 3;
-$quadruple-spacing-unit:  	$base-spacing-unit * 4;
+$base-spacing-unit:         $base-line-height;
+$half-spacing-unit:         $base-spacing-unit / 2;
+$two-thirds-spacing-unit:   $base-spacing-unit / 4 * 3;
+$quarter-spacing-unit:      $base-spacing-unit / 4;
+$double-spacing-unit:       $base-spacing-unit * 2;
+$triple-spacing-unit:       $base-spacing-unit * 3;
+$quadruple-spacing-unit:    $base-spacing-unit * 4;
 
 // font sizes
-$giga-size:         		48px!default;
-$mega-size:         		44px!default;
-$kilo-size:         		40px!default;
+$giga-size:                 48px!default;
+$mega-size:                 44px!default;
+$kilo-size:                 40px!default;
 
-$h1-size:          			36px!default; // .alpha
-$h2-size:           		32px!default; // .beta
-$h3-size:           		28px!default; // .gamma
-$h4-size:           		24px!default; // .delta
-$h5-size:           		20px!default; // .epsilon
-$h6-size:           		16px!default; // .zeta
+$h1-size:                   36px!default; // .alpha
+$h2-size:                   32px!default; // .beta
+$h3-size:                   28px!default; // .gamma
+$h4-size:                   24px!default; // .delta
+$h5-size:                   20px!default; // .epsilon
+$h6-size:                   16px!default; // .zeta
 
-$base-size: 				$base-font-size;
-$lead-size: 				18px!default;
-$milli-size:        		14px!default;
-$micro-size:        		12px!default;
+$base-size:                 $base-font-size;
+$lead-size:                 18px!default;
+$milli-size:                14px!default;
+$micro-size:                12px!default;
 
 // responsiveness
 
-$responsive: 				true!default;
+$responsive:                true!default;
 
 // responsive breakpoints
-$s-start:         		481px!default;
-$m-start:         		760px!default;
-$l-start:        		1024px!default;
-$xl-start: 				1200px!default;
+$breakpoints:               ("s" 481px)
+                            ("m" 760px)
+                            ("l" 1024px)
+                            ("xl" 1200px);
+
+// colors
+$colors:                    ("w" #FFFFFF)
+                            ("b" #000000);
 
 // debug options
-$debug: 					false!default;
+$debug:                     false!default;
 
-// development makes the classes noisy
-$development: 				true;
+
 
 // here define all the lists
 $sus: $quarter-spacing-unit, $half-spacing-unit, $two-thirds-spacing-unit,
-		$base-spacing-unit, $double-spacing-unit,
-		$triple-spacing-unit, $quadruple-spacing-unit;
+        $base-spacing-unit, $double-spacing-unit,
+        $triple-spacing-unit, $quadruple-spacing-unit;

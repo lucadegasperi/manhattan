@@ -38,14 +38,14 @@
  */
 @mixin class($classname) {
     @if($development == true) {
-      .#{$classname}, %#{$classname} {
-        @content;
-      }
+        .#{$classname}, %#{$classname} {
+            @content;
+        }
     }
     @if($development == false) {
-      %#{$classname} {
-        @content;
-      }
+        %#{$classname} {
+            @content;
+        }
     }
 }
 
@@ -128,38 +128,25 @@
  * We work out your end points for you:
  */
 
-$xs-end:              $s-start - 1px;
+@mixin media-query($pixels) {
+    @media only screen and (min-width: ( $pixels / $base-font-size ) * 1em ) { @content; }
+}
 
-@mixin media-query($media-query){
-
-    // apply the styles only and exclusively to xs screen sizes
-    @if $media-query == xs{
-
-        @media only screen and (max-width: ( $xs-end / $base-font-size ) * 1em ) { @content; }
-
+/**
+ * Find a matching item in a key => value list and returns it
+ *
+ */
+@function value-for-key($list, $key) {
+    @each $item in $list {
+        @if (nth($item, 1) == $key) {
+            @return nth($item, 2);
+        }
     }
+}
 
-    @if $media-query == s{
-
-        @media only screen and (min-width: ( $s-start / $base-font-size ) * 1em ) { @content; }
-
-    }
-
-    @if $media-query == m{
-
-        @media only screen and (min-width: ( $m-start / $base-font-size ) * 1em ) { @content; }
-
-    }
-
-    @if $media-query == l{
-
-        @media only screen and (min-width: ( $l-start / $base-font-size ) * 1em ) { @content; }
-
-    }
-
-    @if $media-query == xl{
-
-        @media only screen and (min-width: ( $xl-start  / $base-font-size ) * 1em ) { @content; }
-
+@mixin breakpoint($name){
+    $pixels: value-for-key($breakpoints, $name);
+    @include media-query($pixels){
+        @content;
     }
 }
