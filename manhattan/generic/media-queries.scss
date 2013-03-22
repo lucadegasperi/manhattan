@@ -12,16 +12,16 @@
 // add responsivity
 @if $responsive == true {
 
-@each $breakpoint in $breakpoints {
-    $name: nth($breakpoint, 1);
-    $pixels: nth($breakpoint, 2);
-    
-    @include media-query($pixels){
-        @include font-sizes-setup("#{$name}-");
-        @include spacing-setup($sus, "#{$name}-");
-        @include widths-setup("#{$name}-");
-        @include colors-setup($colors, "#{$name}-");
+    @each $breakpoint in $breakpoints {
+        $name: nth($breakpoint, 1);
+        $pixels: nth($breakpoint, 2);
+      
+        @include media-query($pixels){
+            @include font-sizes-setup("#{$name}-");
+            @include spacing-setup($sus, "#{$name}-");
+            @include widths-setup("#{$name}-");
+            @include colors-setup($colors, "#{$name}-");
+        }
     }
-}
 
-} 
+}

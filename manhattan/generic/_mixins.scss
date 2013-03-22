@@ -38,14 +38,14 @@
  */
 @mixin class($classname) {
     @if($development == true) {
-      .#{$classname}, %#{$classname} {
-        @content;
-      }
+        .#{$classname}, %#{$classname} {
+            @content;
+        }
     }
     @if($development == false) {
-      %#{$classname} {
-        @content;
-      }
+        %#{$classname} {
+            @content;
+        }
     }
 }
 
@@ -129,8 +129,7 @@
  */
 
 @mixin media-query($pixels) {
-
-  @media only screen and (min-width: ( $pixels / $base-font-size ) * 1em ) { @content; }
+    @media only screen and (min-width: ( $pixels / $base-font-size ) * 1em ) { @content; }
 }
 
 /**
@@ -139,15 +138,15 @@
  */
 @function value-for-key($list, $key) {
     @each $item in $list {
-      @if (nth($item, 1) == $key) {
-        @return nth($item, 2);
-      }
+        @if (nth($item, 1) == $key) {
+            @return nth($item, 2);
+        }
     }
 }
 
 @mixin breakpoint($name){
-  $pixels: value-for-key($breakpoints, $name);
-  @include media-query($pixels){
-    @content;
-  }
+    $pixels: value-for-key($breakpoints, $name);
+    @include media-query($pixels){
+        @content;
+    }
 }

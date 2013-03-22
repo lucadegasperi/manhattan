@@ -30,7 +30,7 @@ Let's say you want to creare the header of your website. With Manhattan simply a
 
 ```html
 <div class="gw">
-	<div class="g one-whole m-one-half pad-2 m-pad-3"></div>
+    <div class="g one-whole m-one-half pad-2 m-pad-3"></div>
 </div>
 ```
 In the example above the div will behave differently depending on the screen size, on a small screen, it will fit the whole container and have a padding of 2 units all around. When the screen gets bigger the m- classes will trigger and the padding increases to 3 units and the div will occupy only half of the container. Pretty easy, just add classes until your element behaves as you want it.
@@ -39,16 +39,16 @@ You're right indeed, that's where Manhattan comes to help again.
 Once you finished prototyping your element it's time to make it real.
 ```html
 <div class="gw">
-	<div class="header"></div>
+    <div class="header"></div>
 </div>
 ```
 ```sass
 .header {
-	@extend %g;
-	@extend %one-whole;
-	@extend %pad-2;
-	@extend %m-one-half;
-	@extend %m-pad-3;
+  @extend %g;
+  @extend %one-whole;
+  @extend %pad-2;
+  @extend %m-one-half;
+  @extend %m-pad-3;
 }
 ```
 Simple and beautiful. You don't even have to worry about media queries, just tell how your element should behave and Manhattan will do the rest.
